@@ -1,0 +1,51 @@
+.formStyle {
+  margin-bottom: 1rem;
+  position: relative;
+
+  .inputStyle {
+    padding: 0.7rem 1rem;
+    width: 80%;
+    border: 1px solid var(--border-color);
+    border-radius: 5rem;
+
+    &::placeholder {
+      color: #542e90;
+      font-weight: 500;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .sendIcon {
+    display: inline-block;
+    position: absolute;
+    right: 23%;
+    top: 11%;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    .sendText {
+      margin-right: 0.3rem;
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .formStyle {
+    .inputStyle {
+      margin-left: 2rem;
+    }
+
+    .sendIcon {
+      right: 16%;
+    }
+  }
+}

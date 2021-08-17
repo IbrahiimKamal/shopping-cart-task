@@ -1,0 +1,53 @@
+.navStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+
+  .addidasLogo {
+    padding: 1rem 0;
+  }
+
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+
+    .iconContainer {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      cursor: pointer;
+    }
+
+    .iconStyle {
+      width: 22px;
+      margin-right: 0.3rem;
+    }
+
+    .textStyle {
+      font-weight: 700;
+      font-size: 14px;
+
+      .counterStyle {
+        position: absolute;
+        bottom: 45%;
+        left: 33%;
+        background-color: var(--primary-color);
+        width: 0.8rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        text-align: center;
+        font-size: 10px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navStyle {
+    flex-direction: row;
+  }
+}

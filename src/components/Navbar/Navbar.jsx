@@ -1,8 +1,24 @@
+import { Link } from 'react-router-dom';
+
+import { navbarLinks } from '../../utils/navbarLinks';
+
+import styles from './Navbar.module.scss';
+
 const Navbar = () => {
   return (
-    <div>
-      <h1>Nav</h1>
-    </div>
+    <nav className={styles.navStyle}>
+      <div className="container">
+        <ul className={styles.list}>
+          {navbarLinks.map((item) => (
+            <li key={item.id}>
+              <Link className={styles.link} to={item.path}>
+                {item.text}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
   );
 };
 

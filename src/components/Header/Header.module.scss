@@ -1,6 +1,7 @@
 .siteHeader {
   background-color: var(--primary-color);
   padding: 1rem 0;
+  box-shadow: 0px 2px #00000025;
 }
 
 .logoContainer {
@@ -85,6 +86,7 @@
     height: auto !important;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     width: 90%;
     margin-left: 2rem;
   }

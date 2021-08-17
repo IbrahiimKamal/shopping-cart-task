@@ -1,0 +1,26 @@
+.formStyle {
+  position: relative;
+
+  .inputSearch {
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5rem;
+
+    &::placeholder {
+      font-weight: 700;
+      color: var(--black-color);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .searchIconStyle {
+    position: absolute;
+    width: 16px;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+}

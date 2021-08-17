@@ -1,0 +1,112 @@
+.footerStyle {
+  background-color: #3c3c3b;
+  padding: 2rem 0;
+
+  .textContainer {
+    margin-bottom: 1.5rem;
+
+    .logoStyle {
+      display: block;
+      width: 180px;
+      margin-bottom: 1rem;
+    }
+
+    .textStyle {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 18px;
+    }
+  }
+
+  .linksListStyle {
+    margin-bottom: 1rem;
+
+    .linksStyle {
+      display: inline-block;
+      padding: 0.5rem 0;
+      color: #fff;
+      font-size: 13px;
+      text-transform: capitalize;
+    }
+  }
+
+  .linksSocialStyle {
+    .socialItemStyle {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .socialTextStyle {
+      font-size: 13px;
+    }
+  }
+
+  .subTextStyle {
+    color: #fff;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .rightsStyle {
+    color: #fff;
+    font-size: 13px;
+
+    .visaStyle {
+      margin: 1rem 0;
+
+      .visaImgStyle {
+        margin: 0 1rem;
+      }
+    }
+
+    .companyStyle {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .textContainer {
+    border-right: 1px solid rgba(204, 204, 204, 0.137);
+    // margin-right: 1rem;
+
+    .textStyle {
+      width: 90%;
+    }
+  }
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .linksContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 3rem;
+
+    .linksListStyle {
+      border-right: 1px solid rgba(204, 204, 204, 0.137);
+    }
+
+    .linksSocialStyle {
+      padding-left: 2rem;
+    }
+  }
+
+  .rightsStyle {
+    border-top: 1px solid rgba(204, 204, 204, 0.137);
+    padding: 1rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
