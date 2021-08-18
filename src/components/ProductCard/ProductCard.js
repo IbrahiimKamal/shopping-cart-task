@@ -1,14 +1,23 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import styles from './Product.module.scss';
 
 const ProductCard = ({ product }) => {
   return (
     <div className={styles.card}>
       <div className={styles.cardImgContainer}>
-        <img
+        <LazyLoadImage
+          effect="blur"
           className={styles.cardImg}
           src={product.image}
           alt={product.info}
         />
+
+        {/* <img
+          className={styles.cardImg}
+          src={product.image}
+          alt={product.info}
+        /> */}
         <div className={styles.circle}>
           <img src="/images/circle.svg" alt="" />
         </div>
