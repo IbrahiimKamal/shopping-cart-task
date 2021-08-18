@@ -1,0 +1,23 @@
+.btnStyle {
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-transform: capitalize;
+  width: 170px;
+  height: 35px;
+  border: none;
+  border-radius: 5rem;
+  margin-right: 1rem;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btnOpacity {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}

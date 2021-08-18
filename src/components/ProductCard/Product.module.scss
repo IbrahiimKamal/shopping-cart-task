@@ -1,0 +1,102 @@
+.card {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  margin: 0 auto 1rem auto;
+  border-radius: 0.3rem;
+  max-width: 298px;
+
+  .cardImgContainer {
+    position: relative;
+
+    .cardImg {
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .circle {
+      position: absolute;
+      top: 2%;
+      left: 3%;
+      background-color: #fff;
+      padding: 0.3rem;
+      border-radius: 0.3rem;
+
+      img {
+        width: 30px;
+        display: block;
+      }
+    }
+  }
+
+  .info {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+
+  .prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .price {
+      font-weight: 700;
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .price2 {
+      font-weight: 500;
+      color: var(--border-color);
+      text-decoration: line-through;
+    }
+
+    .discound {
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      border-radius: 0.3rem;
+      margin-left: 0.5rem;
+      background-color: var(--primary-color);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .addidasLogo {
+      width: 50px;
+      margin-right: 1rem;
+    }
+  }
+
+  .rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .rating {
+      margin-right: 1rem;
+
+      img {
+        width: 15px;
+        margin-right: 0.3rem;
+      }
+    }
+
+    .rates {
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+
+  .shipping {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,162 @@
+.product {
+  .productInfo {
+    position: relative;
+
+    .productImgContainer {
+      .bigImage {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .imageStyle {
+        display: inline-block;
+        position: absolute;
+        top: 50px;
+        left: 110px;
+        background-color: #fff;
+        padding: 0.5rem 0.7rem;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+
+  .imagesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .imageContainer {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 1rem;
+    }
+
+    .images {
+      width: 20%;
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+
+  .addidasLogo {
+    width: 50px;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    width: 65%;
+  }
+
+  .category {
+    color: #a7a9ac;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+
+  .rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 1rem;
+
+    .rateNumber {
+      font-weight: 700;
+    }
+
+    .rates {
+      font-size: 14px;
+      color: #a7a9ac;
+      font-weight: 500;
+    }
+  }
+
+  .prices {
+    // width: 50%;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 1.5rem;
+
+    .price {
+      font-weight: 700;
+      color: var(--secondary-color);
+      font-size: 1.3rem;
+      margin-right: 1rem;
+    }
+
+    .price2 {
+      color: #a7a9ac;
+      text-decoration: line-through;
+      margin-right: 1rem;
+    }
+
+    .descound {
+      display: inline-block;
+      background-color: var(--primary-color);
+      padding: 0.3rem 1rem;
+      border-radius: 0.3rem;
+    }
+  }
+
+  .sizeContainer {
+    margin: 1rem 0;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 1.5rem;
+
+    .sizes {
+      margin-top: 1rem;
+
+      .size {
+        display: inline-block;
+        border: 1px solid var(--border-color);
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        font-size: 11px;
+        text-transform: capitalize;
+        color: var(--secondary-color);
+        font-weight: 700;
+        margin-right: 0.5rem;
+
+        &:nth-child(3) {
+          background-color: #ececec;
+        }
+      }
+    }
+  }
+
+  .colors {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 1.5rem;
+
+    .color {
+      margin-right: 1rem;
+
+      &:nth-child(1) {
+        border: 1px solid var(--secondary-color);
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .pickBtn {
+    background-color: var(--primary-color);
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
